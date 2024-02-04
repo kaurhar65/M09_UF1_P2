@@ -59,35 +59,35 @@ header p{
 }
 .sobreNosaltres{
     margin: 3% 15%;
-    border: 1px solid darkblue;
 }
 
 .primero{
     margin:  3% 0%;
-    border: 1px darkgreen solid;
     overflow: auto;
 }
 
 .segundo{
     margin: 3% 0%;
-    border: 1px slategrey solid;
     overflow: auto;
 }
 
-.texto1, .texto2{
-    padding: 3%;
+
+.texto1{
+    padding: 3% 0% 3% 3%;
+    text-align: justify;
+}
+.texto2{
+    padding: 3% 3% 3% 0%;
     text-align: justify;
 }
 .imgSN1{
     float: left;
     margin-right: 10px;
-    border: 1px solid skyblue;
 }
 
 .imgSN2{
     float: right;
     margin-left: 10px;
-    border: 1px solid skyblue;
 }
 
 .imgSN1 img, .imgSN2 img{
@@ -108,9 +108,11 @@ header p{
         "menu2 img2-1 img2-2";
 
 }
+.tituloCarta{
+    margin-left: 15%;
+}
 
 .titleMenu{
-    border: 1px solid slateblue;
     grid-area: titleMenu;
     padding: 1%;
     background-color: #000080;
@@ -130,13 +132,11 @@ header p{
 }
 
 .contenido{
-    border: 1px solid teal;
     grid-area: contenido;
     margin: 15px 0px 10px 10px;
 }
 
 .img1-1{
-    border: 1px solid sienna;
     grid-area: img1;
     background-image: url(/imagenes/imgGrid1.jpg);
     background-size: cover;
@@ -146,7 +146,6 @@ header p{
 }
 
 .img1-2{
-    border: 1px solid sienna;
     grid-area: img2;
     background-image: url(/imagenes/imgGrid1-1.jpg);
     background-size: cover;
@@ -166,13 +165,11 @@ header p{
 }
 
 .contenido2{
-    border: 1px solid darkgoldenrod;
     grid-area: contenido2;
     margin: 15px 0px 10px 10px;
 }
 
 .img2-1{
-    border: 1px solid blue;
     grid-area: img2-1;
     background-image: url(/imagenes/imgGrid2.jpg);
     background-size: cover;
@@ -182,7 +179,6 @@ header p{
 }
 
 .img2-2{
-    border: 1px solid grey;
     grid-area: img2-2;
     background-image: url(/imagenes/imgGrid2-2.jpg);
     background-size: cover;
@@ -191,130 +187,84 @@ header p{
 }
 
 
-
-
-
-/* .primero{
-    overflow: auto;
-    padding-left: 0%;
-    padding-right: 1.5rem;
-    padding-top: 2%;
-
-}
-
-.segundo{
-    margin-top: 70px;
-    overflow: auto;
-    padding-right: 0%;
-    padding-left: 1.5rem;
-    
-}
-
-.imgSN2{
-    float: right;
-}
-
-.imgSN1 img, .imgSN2 img{
-    border-radius: 6px;
-}
-
-.primero p, .segundo p{
-    margin: 5px;
-    
-}
-.texto1{
-    padding-top: 30px;
-    padding-left: 40% ;
-    text-align: justify;
-}
-
-.texto2{
-    padding-right: 40%;
-    padding-top: 30px;
-    text-align: justify;
-}
-
-
-
-img{
-    width: 300px;
-    height: 200px;
-    float: left;
-}
-
-.titleMenu{
-    border: 1px solid seagreen;
+.contenidor {
     margin: 3% 15%;
-} */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.fr{
-    margin-left: 15%;
 }
 
-.fotos, .fotos2 {
+.imagenes {
     display: flex;
     flex-direction: row;
-    gap: 5%;
-    padding: 2%;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
-.fotos img, .fotos2 img {
-    border: 2px solid transparent;    
-    padding: 0; 
+
+.imagenes img {
+    width: calc(25% - 22px);
+    margin: 10px; 
+    border: 1px solid transparent;    
+    padding: 2px;
+    border-radius: 5px;
 }
 
-.fotos img:hover, .fotos2 img:hover {
+.imagenes img:nth-child(4n + 1) {
+    margin-left: 0; 
+}
+
+.imagenes img:nth-child(4n) {
+    margin-right: 0;
+}
+.imagenes img:hover {
     border-color: whitesmoke;
     filter: brightness(40%);
 }
+
 footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
     background-color: black;
-    color: white;
-    border: 2px solid darkcyan;
-    justify-content: space-between; 
-    padding: 10px; 
 }
 
-footer a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.fot1 {
+.contacto {
     display: flex;
-    flex-direction: row;
-    gap: 3%;
-    justify-content: flex-start; 
+    padding: 0px;
 }
 
-.fot2 {
+footer div {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end; 
+    padding: 10px;
+    width: fit-content;
+    color: #fff;
+}
+
+.mail, .mob{
+    padding-left: 10px;
+    text-align: center;
+    width: fit-content;
+    margin: auto; 
+}
+
+.nombre-fo{
+    padding-top: 15px;
 }
 
 
-/* todos los sections con 15%margin */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
