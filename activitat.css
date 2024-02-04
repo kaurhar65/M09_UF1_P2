@@ -1,0 +1,320 @@
+/* borders y margin: rem  y el otro para el texto*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+}
+nav{
+    background-color: black;
+    height:40px;
+    padding-right: 2.5rem;
+    position:sticky;
+    top: 0;
+}
+nav a{
+    color: white;
+    font-size: 1em;
+    /* border: 1px solid skyblue; */
+    padding: 0.75rem;
+    float: right;
+    text-decoration: none;
+    
+}
+nav a:hover{
+    background-color: gray;
+}
+
+header{
+    height: 400px;
+    width: 100%;
+    background-image: url(/imagenes/headerOs.png);
+    background-size: cover;
+    background-position-y: center;
+}
+
+main{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+/**
+hay código repetido, meter los elementos del header dentro de div
+*/
+header h1{
+    color: white;
+    font-size: 3rem;
+    margin-left: 15%;
+    padding-top: 150px;
+    font-weight:normal;
+}
+header h1 span{
+    font-size: 3rem;
+    font-weight:bolder;
+}
+header p{
+    color: white;
+    margin-left: 15%;
+
+}
+.sobreNosaltres{
+    margin: 3% 15%;
+    border: 1px solid darkblue;
+}
+
+.primero{
+    margin:  3% 0%;
+    border: 1px darkgreen solid;
+    overflow: auto;
+}
+
+.segundo{
+    margin: 3% 0%;
+    border: 1px slategrey solid;
+    overflow: auto;
+}
+
+.texto1, .texto2{
+    padding: 3%;
+    text-align: justify;
+}
+.imgSN1{
+    float: left;
+    margin-right: 10px;
+    border: 1px solid skyblue;
+}
+
+.imgSN2{
+    float: right;
+    margin-left: 10px;
+    border: 1px solid skyblue;
+}
+
+.imgSN1 img, .imgSN2 img{
+    border-radius: 10px;
+}
+
+.menus{
+    margin: 2% 15%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    height: auto;
+    grid-template-rows: 0.1fr 1fr 2fr 1fr 2fr ;
+    grid-template-areas: 
+        "titleMenu titleMenu titleMenu"
+        "menu1 contenido contenido"
+        "menu1 img1 img2"
+        "menu2 contenido2 contenido2"
+        "menu2 img2-1 img2-2";
+
+}
+
+.titleMenu{
+    border: 1px solid slateblue;
+    grid-area: titleMenu;
+    padding: 1%;
+    background-color: #000080;
+    color: white;
+    text-align: center;
+    
+}
+
+.menu1{
+    border: 1px solid teal;
+    grid-area: menu1;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.contenido{
+    border: 1px solid teal;
+    grid-area: contenido;
+    margin: 15px 0px 10px 10px;
+}
+
+.img1-1{
+    border: 1px solid sienna;
+    grid-area: img1;
+    background-image: url(/imagenes/imgGrid1.jpg);
+    background-size: cover;
+    background-position-y: center;
+    margin: 5px 0px 0px 10px;
+
+}
+
+.img1-2{
+    border: 1px solid sienna;
+    grid-area: img2;
+    background-image: url(/imagenes/imgGrid1-1.jpg);
+    background-size: cover;
+    background-position-y: center;
+    margin: 5px 0px 0px 10px;
+}
+
+
+.menu2{
+    border: 1px solid teal ;
+    grid-area: menu2;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.contenido2{
+    border: 1px solid darkgoldenrod;
+    grid-area: contenido2;
+    margin: 15px 0px 10px 10px;
+}
+
+.img2-1{
+    border: 1px solid blue;
+    grid-area: img2-1;
+    background-image: url(/imagenes/imgGrid2.jpg);
+    background-size: cover;
+    background-position-y: center;
+    margin: 5px 0px 0px 10px;
+    padding: 5%;
+}
+
+.img2-2{
+    border: 1px solid grey;
+    grid-area: img2-2;
+    background-image: url(/imagenes/imgGrid2-2.jpg);
+    background-size: cover;
+    background-position-y: center;
+    margin: 5px 0px 0px 10px;
+}
+
+
+
+
+
+/* .primero{
+    overflow: auto;
+    padding-left: 0%;
+    padding-right: 1.5rem;
+    padding-top: 2%;
+
+}
+
+.segundo{
+    margin-top: 70px;
+    overflow: auto;
+    padding-right: 0%;
+    padding-left: 1.5rem;
+    
+}
+
+.imgSN2{
+    float: right;
+}
+
+.imgSN1 img, .imgSN2 img{
+    border-radius: 6px;
+}
+
+.primero p, .segundo p{
+    margin: 5px;
+    
+}
+.texto1{
+    padding-top: 30px;
+    padding-left: 40% ;
+    text-align: justify;
+}
+
+.texto2{
+    padding-right: 40%;
+    padding-top: 30px;
+    text-align: justify;
+}
+
+
+
+img{
+    width: 300px;
+    height: 200px;
+    float: left;
+}
+
+.titleMenu{
+    border: 1px solid seagreen;
+    margin: 3% 15%;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fr{
+    margin-left: 15%;
+}
+
+.fotos, .fotos2 {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    padding: 2%;
+}
+
+.fotos img, .fotos2 img {
+    border: 2px solid transparent;    
+    padding: 0; 
+}
+
+.fotos img:hover, .fotos2 img:hover {
+    border-color: whitesmoke;
+    filter: brightness(40%);
+}
+footer {
+    background-color: black;
+    color: white;
+    border: 2px solid darkcyan;
+    justify-content: space-between; 
+    padding: 10px; 
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.fot1 {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    justify-content: flex-start; 
+}
+
+.fot2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+}
+
+
+/* todos los sections con 15%margin */
