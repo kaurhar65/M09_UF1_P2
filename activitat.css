@@ -1,4 +1,3 @@
-/* borders y margin: rem  y el otro para el texto*/
 
 *{
     padding: 0px;
@@ -39,7 +38,7 @@ main{
     padding-right: 5%;
 }
 /**
-hay código repetido, meter los elementos del header dentro de div
+hay código repetidooooooooooooo, revisar
 */
 header h1{
     color: white;
@@ -64,21 +63,25 @@ header p{
 .primero{
     margin:  3% 0%;
     overflow: auto;
+    overflow: hidden;
 }
 
 .segundo{
     margin: 3% 0%;
     overflow: auto;
+    overflow: hidden;
 }
 
 
 .texto1{
     padding: 3% 0% 3% 3%;
     text-align: justify;
+    overflow: hidden;
 }
 .texto2{
     padding: 3% 3% 3% 0%;
     text-align: justify;
+    overflow: hidden;
 }
 .imgSN1{
     float: left;
@@ -94,96 +97,59 @@ header p{
     border-radius: 10px;
 }
 
-.menus{
-    margin: 2% 15%;
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
-    height: auto;
-    grid-template-rows: 0.1fr 1fr 2fr 1fr 2fr ;
-    grid-template-areas: 
-        "titleMenu titleMenu titleMenu"
-        "menu1 contenido contenido"
-        "menu1 img1 img2"
-        "menu2 contenido2 contenido2"
-        "menu2 img2-1 img2-2";
-
-}
 .tituloCarta{
     margin-left: 15%;
 }
 
-.titleMenu{
-    grid-area: titleMenu;
-    padding: 1%;
+.menus {
+    margin: 2% 15%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    height: auto;
+}
+
+.titleMenu {
     background-color: #000080;
     color: white;
     text-align: center;
-    
+    grid-column: span 5;
+    padding: 10px;
 }
 
-.menu1{
-    border: 1px solid teal;
-    grid-area: menu1;
+.item1 {
+    grid-column: span 1;
+    grid-row: span 3;
+    border: 1px solid black;
     font-weight: bolder;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 15px;
+
 }
 
-.contenido{
-    grid-area: contenido;
-    margin: 15px 0px 10px 10px;
+.item2 {
+    grid-column: span 4;
+    grid-row: span 1;
+    text-align: justify;
 }
 
-.img1-1{
-    grid-area: img1;
+.item3 {
+    grid-column: span 2;
+    grid-row: span 2;
     background-image: url(/imagenes/imgGrid1.jpg);
     background-size: cover;
-    background-position-y: center;
-    margin: 5px 0px 0px 10px;
-
+    background-position: center;
+    height: 250px;
 }
 
-.img1-2{
-    grid-area: img2;
+.item4 {
+    grid-column: span 2;
+    grid-row: span 2;
     background-image: url(/imagenes/imgGrid1-1.jpg);
     background-size: cover;
-    background-position-y: center;
-    margin: 5px 0px 0px 10px;
-}
-
-
-.menu2{
-    border: 1px solid teal ;
-    grid-area: menu2;
-    font-weight: bolder;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.contenido2{
-    grid-area: contenido2;
-    margin: 15px 0px 10px 10px;
-}
-
-.img2-1{
-    grid-area: img2-1;
-    background-image: url(/imagenes/imgGrid2.jpg);
-    background-size: cover;
-    background-position-y: center;
-    margin: 5px 0px 0px 10px;
-    padding: 5%;
-}
-
-.img2-2{
-    grid-area: img2-2;
-    background-image: url(/imagenes/imgGrid2-2.jpg);
-    background-size: cover;
-    background-position-y: center;
-    margin: 5px 0px 0px 10px;
+    background-position: center;
+    height: 250px;
 }
 
 
@@ -250,13 +216,6 @@ footer div {
 .nombre-fo{
     padding-top: 15px;
 }
-
-
-
-
-
-
-
 
 
 
